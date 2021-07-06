@@ -38,19 +38,19 @@ Please also download pre-trained weights at [this Google Drive folder](https://d
 
 ## Pre-training
 ```
-python3 -u run_pretrain.py
+bash run_pretrain.sh
 ```
 This pretrains on a small demo dataset `data/instance_meta/instance_meta_pretrain_demo.pkl` as an example. Please follow its file format if you'd like to pretrain on a larger dataset (e.g., latest full version of MovieClips).
 
 ## Training and evaluating on AVA v2.2
 ```
-python3 -u run_ava.py
+bash run_ava.sh
 ```
 This should achieve 31.0 mAP.
 
 ## Training and evaluating on LVU tasks
 ```
-python3 -u run.py [1-9]
+bash run.sh [1-9]
 ```
 The argument selects a task to run on. Please see `run.py` for details.
 
